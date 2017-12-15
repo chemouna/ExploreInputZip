@@ -15,6 +15,7 @@ public class Parse {
             zipFile = new ZipFile("resources/test.zip");
             Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
+/*
             int BUFFER = 4096;
             while (entries.hasMoreElements()) {
                 ZipEntry entry = entries.nextElement();
@@ -52,6 +53,7 @@ public class Parse {
 
                 //InputStream stream = zipFile.getInputStream(entry);
             }
+*/
         } catch (IOException e) {
             e.printStackTrace();
         }
