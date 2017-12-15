@@ -1,9 +1,6 @@
 package com.mounacheikhna.exploreinputzip;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -13,6 +10,8 @@ public class Unzipper {
     public static void main(String[] args) {
         try {
             ZipFile zf = new ZipFile("resources/simple.zip");
+            new File("simple").mkdir();
+
             Enumeration e = zf.entries();
             while (e.hasMoreElements()) {
                 ZipEntry ze = (ZipEntry) e.nextElement();
