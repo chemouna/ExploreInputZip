@@ -1,0 +1,13 @@
+{
+  "field1": "value1",
+  "field2": "value2",
+  "subvalues":
+  [
+    {
+      "subfield": "subvalue1",
+    },
+    {
+      "subfield": "subvalue2",
+    }
+  ]
+}

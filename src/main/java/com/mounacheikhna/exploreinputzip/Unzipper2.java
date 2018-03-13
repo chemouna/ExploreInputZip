@@ -14,6 +14,8 @@ public class Unzipper2 {
             ZipInputStream zin = new ZipInputStream(fin);
             ZipEntry ze;
             while ((ze = zin.getNextEntry()) != null) {
+
+
                 System.out.println("Unzipping " + ze.getName());
                 FileOutputStream fout = new FileOutputStream(ze.getName());
                 Copier.copy(zin, fout);
